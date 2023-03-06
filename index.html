@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultor</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body >
+    <div id="container">
+     <form name="cform">
+        <input name="Ans" id="box" placeholder="Enter Here"><br>
+        <input  type="button" value="1" onclick="cform.Ans.value +='1'" class="a" onmousedown="clicksound()">
+        <input  type="button" value="2" onclick="cform.Ans.value +='2'"class="a" onmousedown="clicksound() ">
+        <input  type="button" value="3" onclick="cform.Ans.value +='3'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="+" onclick="cform.Ans.value +='+'"class="a"onmousedown="clicksound()"><br>
+
+        <input  type="button" value="4" onclick="cform.Ans.value +='4'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="5" onclick="cform.Ans.value +='5'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="6" onclick="cform.Ans.value +='6'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="-" onclick="cform.Ans.value +='-'"class="a"onmousedown="clicksound()"><br>
+
+        <input  type="button" value="7" onclick="cform.Ans.value +='7'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="8" onclick="cform.Ans.value +='8'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="9" onclick="cform.Ans.value +='9'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="X" onclick="cform.Ans.value +='*'"class="a"onmousedown="clicksound()"><br>
+
+        <input  type="button" value="%" onclick="cform.Ans.value +='%'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="0" onclick="cform.Ans.value +='0'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="." onclick="cform.Ans.value +='.'"class="a"onmousedown="clicksound()">
+        <input  type="button" value="/" onclick="cform.Ans.value +='/'"class="a"onmousedown="clicksound()"><br>
+
+        <input  type="button" value="c" onclick="cform.Ans.value =''" id="clr" onmousedown="clicksound()">
+        <input  type="button" value="=" onclick="cform.Ans.value =eval(cform.Ans.value)  " id="equal"onmousedown="clicksound()">
+
+    
+        <br>
+
+       </form>
+    </div>
+    <script>
+        function clicksound()
+        {
+            var clksound=new Audio()
+            clksound.src="mouse-clicks.mp3"
+            clksound.play()
+        }
+    </script>
+</body>
+</html>
